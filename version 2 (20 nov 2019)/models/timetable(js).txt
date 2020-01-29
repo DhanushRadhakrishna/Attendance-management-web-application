@@ -1,0 +1,9 @@
+var mongoose = require("mongoose");
+var timetableSchema = new mongoose.Schema({
+    subject1:  {    name:String,    hrs:Number  },
+    subject2:  {    name:String,    hrs:Number  },
+    subject3:  {    name:String,    hrs:Number  },
+    subject4:  {    name:String,    hrs:Number  },
+    subject5:  {    name:String,    hrs:Number  },
+});
+module.exports = mongoose.model("Timetable", timetableSchema);

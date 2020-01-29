@@ -1,0 +1,107 @@
+<% include partials/header %> 
+<style type="text/css">
+    .blue{
+        background:rgb(133, 224, 224);
+    }
+    .red{
+        background:rgb(255, 170, 128);
+    }
+    .day{
+        font-size : 20px;
+    }
+</style>
+<h1>Please Enter The Time Table</h1>
+<form action="/home" method="post">
+<div class="container blue">
+        <div class="row">
+                <div class="col-lg-1 blue day">Timings</div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 blue day">1st hour</div>
+        <div class="col-lg-2 blue day">2nd hour</div>
+        <div class="col-lg-2 blue day">3rd hour</div>
+        <div class="col-lg-2 blue day">4th hour</div>
+        <div class="col-lg-2 blue day">5th hour</div>
+        <div class="col-lg-2 blue day">6th hour</div>
+    </div>
+    <div class="row">
+                <div class="col-lg-1 blue day">MONDAY</div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 blue"><input type="text" name="mon[0]"class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="mon[1]"class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="mon[2]"class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text"name="mon[3]" class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="mon[4]"class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="mon[5]"class="form-control" placeholder="crs code"></div>
+    </div>
+     <div class="row">
+                <div class="col-lg-1 blue day">TUESDAY</div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 blue"><input type="text" name="tue[0]" class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="tue[1]" class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="tue[2]" class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="tue[3]" class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="tue[4]" class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="tue[5]" class="form-control" placeholder="crs code"></div>
+    </div>
+     <div class="row">
+                <div class="col-lg-1 blue day">WEDNESDAY</div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 blue"><input type="text" name="wed[0]" class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="wed[1]" class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="wed[2]" class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="wed[3]" class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="wed[4]" class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="wed[5]" class="form-control" placeholder="crs code"></div>
+    </div>
+     <div class="row">
+                <div class="col-lg-1 blue day">THURSDAY</div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 blue"><input type="text" name="thu[0]" class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="thu[1]" class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="thu[2]" class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="thu[3]" class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="thu[4]" class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="thu[5]" class="form-control" placeholder="crs code"></div>
+    </div>
+     <div class="row"> 
+                <div class="col-lg-1 blue day">FRIDAY</div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 blue"><input type="text" name="fri[0]" class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="fri[1]" class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="fri[2]" class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="fri[3]" class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="fri[4]" class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="fri[5]" class="form-control" placeholder="crs code"></div>
+    </div>
+     <div class="row">
+                <div class="col-lg-1 blue day">SATURDAY</div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 blue"><input type="text" name="sat[0]" class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="sat[1]" class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="sat[2]" class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="sat[3]" class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="sat[4]" class="form-control" placeholder="crs code"></div>
+        <div class="col-lg-2 blue"><input type="text" name="sat[5]" class="form-control" placeholder="crs code"></div>
+    </div>
+    <div style=" margin: 25px auto;">
+    <div class="row">
+                        <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-lg">Submit!</button>
+                </div>
+    </div>
+    </div>
+</div>
+
+</form>
+       <!--<script src="./apps.js"></script>-->
+
+    
+    </body>
+</html>

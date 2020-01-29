@@ -1,0 +1,59 @@
+// alert("connected");
+var btn=document.querySelectorAll("button");
+var confirm = document.getElementById("confirm");
+var week=document.getElementById("week");
+// console.log(btn);
+ var cs1=0,cs2=0,cs3=0,cs4=0,cs5=0,i=1;
+ var ns1=5,ns2=7,ns3=9,ns4=6,ns5=9;
+ var ps1=0,ps2=0,ps3=0,ps4=0,ps5=0;
+    var temp1=document.getElementById("monday");
+    var temp2=document.getElementById("tuesday");
+    var temp3=document.getElementById("wednesday");
+    var temp4=document.getElementById("thursday");
+    var temp5=document.getElementById("friday");
+btn.forEach(function(button)
+{
+  button.addEventListener('click', function (event) {
+  // alert("clicked button");
+  if(button.textContent.trim() === temp1.textContent.trim())
+  {
+     cs1=cs1+1;   console.log(cs1); ps1=(cs1/ns1)*100; ps1=ps1.toFixed(2);
+  }
+  else if(button.textContent.trim() === temp2.textContent.trim())
+  {
+      cs2=cs2+1;    console.log(cs2);          ps2=(cs2/ns2)*100; ps2=ps2.toFixed(2);
+  }
+  else if(button.textContent.trim() === temp3.textContent.trim())
+  {
+      cs3=cs3+1;    console.log(cs3);          ps3=(cs3/ns3)*100; ps3=ps3.toFixed(2);
+  }
+  else if(button.textContent.trim() === temp4.textContent.trim())
+  {
+      cs4=cs4+1;    console.log(cs4);          ps4=(cs4/ns4)*100; ps4=ps4.toFixed(2);
+  }
+  else if(button.textContent.trim() === temp5.textContent.trim())
+  {
+      cs5=cs5+1;   console.log(cs5);           ps5=(cs5/ns5)*100; ps5=ps5.toFixed(2);
+  }
+});
+});
+          var txt1=document.getElementById("a");
+          var txt2=document.getElementById("b");
+          var txt3=document.getElementById("c");
+          var txt4=document.getElementById("d");
+          var txt5=document.getElementById("e");
+confirm.addEventListener('click',function(event){
+            txt1.textContent=temp1.textContent+"  "+ps1+"%";
+            txt2.textContent=temp2.textContent+"  "+ps2+"%";
+            txt3.textContent=temp3.textContent+"  "+ps3+"%";
+            txt4.textContent=temp4.textContent+"  "+ps4+"%";
+            txt5.textContent=temp5.textContent+"  "+ps5+"%";
+            ns1=ns1*2;
+            ns2=ns2*2;
+            ns3=ns3*3;
+            ns4=ns4*2;
+            ns5=ns5*2;
+            i=i+1;
+            week.textContent="week "+i;
+});
+
